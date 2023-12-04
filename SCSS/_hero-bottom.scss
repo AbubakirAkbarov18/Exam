@@ -1,0 +1,46 @@
+:root {
+    --EXO2: 'Exo 2', sans-serif;
+    --PTSANS: 'PT Sans', sans-serif;
+    --Black: #363738;
+    --Gray: #6B6B6C;
+}
+
+.hero-bottom__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding: 50px 80px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px 0px #00000026;
+    margin-bottom: 70px;
+
+    & .hero-bottom__content:nth-child(2) {
+        border-left: 1px solid #D7D7DD;
+        border-right: 1px solid #D7D7DD;
+        padding-left: 65px;
+        padding-right: 120px;
+    }
+
+    .hero-bottom__content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0px;
+        max-width: 228px;
+
+        .hero-bottom__head {
+            color: var(--Black);
+            font-family: var(--EXO2);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 135%;
+        }
+
+        .hero-bottom__text {
+            color: var(--Gray);
+            font-family: var(--PTSANS);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+}

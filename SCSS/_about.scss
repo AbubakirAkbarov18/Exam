@@ -1,0 +1,54 @@
+:root {
+    --EXO2: 'Exo 2', sans-serif;
+    --PTSANS: 'PT Sans', sans-serif;
+    --Black: #363738;
+    --Gray: #6B6B6C;
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px 0px;
+}
+
+
+
+.about-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: transparent;
+    flex-wrap: wrap;
+    gap: 64px 176px;
+
+
+    .about__card {
+        display: flex;
+        gap: 0px 40px;
+        max-width: 447px;
+
+        .card__head {
+            color: var(--Black);
+            font-family: var(--EXO2);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 135%;
+        }
+
+        & div:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            gap: 15px 0px;
+        }
+
+        .card__text {
+            color: var(--Gray);
+            font-family: var(--PTSANS);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+}

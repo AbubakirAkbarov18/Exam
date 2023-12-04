@@ -1,0 +1,107 @@
+@import "reset";
+@import "hero";
+@import "hero-bottom";
+@import "about";
+@import "performing";
+@import "our-clients";
+
+@media only screen and (max-width: 720px) {
+    .hero__wrapper {
+        flex-direction: column;
+        gap: 85px 0px;
+
+        .hero__content {
+            justify-content: center;
+            align-items: center;
+            gap: 45px 0px;
+            max-width: 720px;
+
+            .hero__head {
+                text-align: center;
+                max-width: 690px;
+                font-size: 44px;
+                font-weight: 600;
+                line-height: 125%;
+            }
+
+            .hero__text {
+                text-align: center;
+                max-width: 690px;
+            }
+        }
+    }
+
+    .hero-bottom__wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 15px 0px;
+        padding: 0px 0px;
+        box-shadow: 0px 0px 0px 0px;
+
+        & .hero-bottom__content:nth-child(2) {
+            border: none;
+            padding-left: 35px;
+            padding-right: 140px;
+        }
+
+        .hero-bottom__content {
+            max-width: 690px;
+            box-shadow: 0px 4px 20px 0px #00000026;
+            padding-top: 35px;
+            padding-bottom: 40px;
+            padding-left: 35px;
+            padding-right: 140px;
+            flex-direction: row;
+            gap: 0px 35px;
+            border-radius: 20px;
+        }
+    }
+
+    .performing__head{
+        font-size: 44px;
+    }
+
+    .performing__cards{
+        flex-direction: column;
+
+        .our-work{
+            max-width: 690px;
+
+            img{
+                max-width: 690px;
+                min-height: 217px;
+            }
+        }
+
+        & .our-work:nth-child(3) {
+            display: none;
+        }
+
+        .our-work__bottom{
+            .our-work__text{
+                max-width: 520px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 370px){
+    .hero__content {
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px 0px;
+        max-width: 344px;
+    }
+
+    .hero__head {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 125%; 
+    }
+
+    .hero__text {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 150%; 
+    }
+}
